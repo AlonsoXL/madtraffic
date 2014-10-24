@@ -30,6 +30,6 @@ output$graf <- renderPlot({
   
   print(p)
   
-}, height = 350)
+}, height = 200)
 
 })

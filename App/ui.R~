@@ -11,10 +11,10 @@ sidebarPanel(
 
 mainPanel(
     p(style="text-align:justify",'La calidad del aire en las grandes ciudades como MADRID depende, entre otros factores de las emisiones contaminantes de los vehiculos a motor. 
-      Nuestra aplicación web pretende visualizar esta relación y alertar de situaciones alarmantes de contaminación relacionadas con el tráfico.'),
-  br(),
-    plotOutput(outputId= 'map'),
-    plotOutput(outputId= 'graf')
+      Nuestra aplicación web pretende visualizar esta relación y alertar de situaciones alarmantes de contaminación relacionadas con el tráfico.'),  
+    plotOutput('map'),
+    br(),
+    plotOutput('graf')
   )
 ))
 
