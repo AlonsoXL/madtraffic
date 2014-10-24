@@ -8,9 +8,6 @@ AQdata$hora <- strftime(AQdata$Fecha, "%H")
 
 shinyServer(function(input, output) {
 
-mapSourceInput <- reactive({
-  })
-  
 output$map <- renderPlot({ 
 if (input$EstacionAQ == 'Plaza de España') {
     mad <- get_map(location = c(lon=-3.712247, lat=40.423853), zoom = 16, maptype='roadmap', color='bw')
@@ -22,7 +19,7 @@ if (input$EstacionAQ == 'Escuelas Aguirre') {
         mapPlot <- ggmap(mad)
         print(mapPlot)
 
-}, height = 700) 
+}, width = 700) 
 
 output$graf <- renderPlot({
   
